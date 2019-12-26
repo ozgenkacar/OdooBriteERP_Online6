@@ -8,6 +8,7 @@ Feature: Login
 #  By passing parameters/strings in "some word" we can reuse test steps
 #  In my project, I was trying to keep scenarios short
 
+
    @events_crm_manager
   Scenario: Login as events crm manager
      Given user is on the login page
