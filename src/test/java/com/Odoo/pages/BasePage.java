@@ -19,8 +19,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //so we can keep them here
 
 public class BasePage {
-    @FindBy(css = "[data-menu=\"68\"]")
+
+
+
+    @FindBy(css = "[data-menu='120']")
+    public WebElement Calendar;
+
+    @FindBy(css = "[data-menu='68']")
     public WebElement contacts;
+
+    @FindBy(css = "[data-menu='261']")
+    public WebElement CRM;
+
+    @FindBy(css = "[data-menu='445']")
+    public WebElement Sales;
+
 
     @FindBy(css = "a[class='oe_menu_leaf']")
     public WebElement pageSubTitle;
@@ -33,9 +46,11 @@ public class BasePage {
 
     @FindBy(linkText = "My User")
     public WebElement myUser;
-    @FindBy(css = "[class=\"o_loading\"]")
+
+    @FindBy(css = "[class='o_loading']")
     public WebElement loaderMask;
-    @FindBy(css = "[accesskey=\"c\"]")
+
+    @FindBy(css = "[accesskey='c']")
     public WebElement create;
 
 
